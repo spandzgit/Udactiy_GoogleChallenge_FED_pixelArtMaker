@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixel Art Maker</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <article id="pixelArtMakerHolder">
+        <header class="pageHeader">
+            <h3>PIXEL ART MAKER</h3>
+        </header>
+        <section class="pageControls">
+            <form id="numControlPickers">
+                <h2 class="cntlPckrText">Grid Height:</h2>
+                <input class="cntlPckrIp" type="number" id="hghtIp" min="1" value="1">
+
+                <h2 class="cntlPckrText">Grid Width:</h2>
+                <input class="cntlPckrIp" type="number" id="wdthIp" min="1" value="1">
+
+                <input type="submit" id="btnSubmit">
+            </form>
+
+            <aside class="colorControlPicker">
+                <h2 class="cntlPckrText">Pick a Color</h2>
+                <input type="color" id="colorIp">
+                
+                <h2 class="cntlPckrClrText">Clear</h2>
+                <button class="cntlPckrBtn" id="btnClear"></button>
+
+                <h2 class="cntlPckrClrText">Reset</h2>
+                <button class="cntlPckrBtn" id="btnReset"></button>
+            </aside>
+        </section>
+        <section class="pageArtMaker">
+            <aside class="makerText">
+                    <h2>Design Canvas</h2>
+            </aside>
+            <aside class="makerHolder">
+                <table id="dynTableCanvas"></table>
+            </aside>
+        </section>
+    </article>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
